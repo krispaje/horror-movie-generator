@@ -44,14 +44,30 @@ form {
 .AI-answer {
   background-color: white;
   width: 450px;
-  font-size: 22px;
+  font-size: 20px;
   color: #666666;
   border-left: 3px solid #c62828;
   padding: 20px;
   min-height: 40px;
   margin: 0px auto;
 }
+.hidden {
+  display: none;
+}
+.loader {
+  display: inline-block;
+  animation: spin 1.5s linear infinite;
+}
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
 p {
   text-align: center;
   font-size: 18px;
