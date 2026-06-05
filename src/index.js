@@ -13,8 +13,8 @@ function generateAnswer(event) {
   answerElement.classList.remove("hidden");
   answerElement.innerHTML = `Searching for: ${userInputValue}....<span class="loader">⏳</span>`;
   apiKey = "9c764o4f1faeb3c3bct46f73f94b0e7b";
-  context =
-    "be like a real movie expert, who is really into horror movies, pick only one movie, it should be horror, be very precise, it can be a title or just a context of a movie, dont write any other words, only movie name, year and director, be polite, if there is no valid answer, just be funny and at the end tell them to give you more context";
+  let context =
+    "You are a horror movie expert. Pick only one movie. The movie must be horror. The user may provide an actor's name, a theme, a plot, or a context. Be very precise. Return only the movie title, release year, and director. Do not write any other text. If there is not enough information, respond with a funny message and ask for more details.";
   prompt = `movie idea: ${userInputValue}`;
   apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
