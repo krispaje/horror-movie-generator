@@ -20,9 +20,9 @@ form {
   align-items: center;
 }
 .text {
-  width: 450px;
+  width: 500px;
 
-  font-size: 18px;
+  font-size: 17px;
   border-radius: 10px;
   border: 1px solid #d9d9d9;
   padding: 30px;
@@ -43,8 +43,8 @@ form {
 }
 .AI-answer {
   background-color: white;
-  width: 450px;
-  font-size: 20px;
+  width: 500px;
+  font-size: 18px;
   color: #666666;
   border-left: 3px solid #c62828;
   padding: 20px;

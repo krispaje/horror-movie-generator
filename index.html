@@ -24,14 +24,14 @@
       <div class="first-line">Horror movie</div>
       <div class="second-line">AI generator</div>
     </h1>
-    <p>Enter movie idea and let AI find you the best match</p>
+    <p>Describe a horror movie and AI will find the best match</p>
   </header>
   <body>
     <form>
       <input
         class="text"
         type="text"
-        placeholder="💀 What kind of horror movie do you want?"
+        placeholder="💀 e.g. Nicole Kidman, ghosts, apocalypse, psychological horror"
         autofocus
         required
         autocomplete="off"
@@ -40,7 +40,9 @@
       <input class="submit" type="submit" value="GENERATE →" />
     </form>
 
-    <div class="AI-answer hidden" id="AI-answer"></div>
+    <div class="AI-answer hidden" id="AI-answer">
+      <span class="loader">⏳</span>
+    </div>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="src/index.js"></script>
 
